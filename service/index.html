@@ -323,6 +323,38 @@ body, .section-title span, .widget_search input, .form-group label, .feature-box
 .car-item .sold, .car-price .sold {
   background: url(../wp-content/themes/cardealer/images/sold-img.png) no-repeat 0 0;;
 }
+.menumobile, .img-menumobile{
+	display: none;
+}
+@media(max-width:991px){
+ .item {
+	margin-left: 100px;
+	
+}
+	.menumobile {
+	display: inline;
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
+	}
+	.mega-menu {
+		display: none;
+	}
+	.img-menumobile{
+	display: initial;
+}
+
+	 .menumobile ul li {
+		list-style-type: none;
+		font: 50px;
+		display: inline;
+		padding-left: 10px;
+	}
+	 .menumobile ul li a{
+		font-size: 15px;
+	
+	}
+ 	}
 
 </style>
 <link rel='stylesheet' id='cardealer-shortcodes-responsive-css' href='../wp-content/themes/cardealer/css/shortcodes-responsive3088.css?ver=3.7.0' media='all' />
@@ -489,6 +521,15 @@ gtag("config", "G-BT257RVM5K");
 	</nav>
 	<!-- menu end -->
 </div>
+	<!-- a seperate menu for mobile responsive -->
+	<img class="img-menumobile" src="lekkilog.png" alt="Lekki_Copart logo" height="70px" ></img>		
+	<div class = "menumobile">			
+	<ul >
+	<li><a href="../index.html">HOME</a></li>
+	<li><a href="../about/index.html">ABOUT US</a></li>
+	<li><a href="../contact/index.html">CONTACT US</a></li>
+	</ul>
+	</div>
 </header>
 		
 		

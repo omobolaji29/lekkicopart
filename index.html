@@ -322,43 +322,39 @@ body, .section-title span, .widget_search input, .form-group label, .feature-box
 font-size: 18px !important;
 margin-top: 50px !important;
 }
-#menu-bar{
+
+.menumobile, .img-menumobile{
 	display: none;
-}
-header label {
-	cursor: pointer;
-	display: none;
-	font-size: 30px;
-	color: #023DAD 
 }
 @media(max-width:991px){
-	.menufont  {
-	position: absolute;
-	right:50px;
+ .item {
+	margin-left: 100px;
+	
 }
-	header label {
-	display: initial;
-	float:right;
-	margin-top: -70px;
+	.menumobile {
+	display: inline;
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
 	}
-	header .menufont{
-    position: absolute;
-	top: 100%; left:0; right:0;
-	background: #fff;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	.mega-menu {
+		display: none;
+	}
+	.img-menumobile{
+	display: initial;
+}
+
+	 .menumobile ul li {
+		list-style-type: none;
+		font: 50px;
+		display: inline;
+		padding-left: 10px;
+	}
+	 .menumobile ul li a{
+		font-size: 15px;
 	
 	}
-	header .menufont ul li {
-     width:100%;
-	position: relative;
-
-	}
-  #menu-toggle:checked ~ .menufont {
-    display: block;
-    }
-
-
-	}
+ 	}
 
 
 </style>
@@ -511,8 +507,6 @@ gtag("config", "G-BT257RVM5K");
 								</li>
 							</ul>
 							<!-- menu links -->
-			<!-- <input type="checkbox" id="menu-bar">
-			<span id ="bolamenu"><label for ="menu-toggle" ><i class="fa fa-bars" aria-hidden="true"></i></label></span> -->
 <div class = "menufont">			
 <ul id="primary-menu" class="menu-links">
 <li id="menu-item-7402" class="menu-item menu-item-type-post_type menu-item-object-page hoverTrigger"><a href="about/index.html">About us</a></li>
@@ -525,6 +519,14 @@ gtag("config", "G-BT257RVM5K");
 		</div>
 	</nav>
 	<!-- menu end -->
+</div>
+<!-- a seperate menu for mobile responsive -->
+<img class="img-menumobile" src="lekkilog.png" alt="Lekki_Copart logo" height="70px" ></img>		
+<div class = "menumobile">			
+<ul >
+<li><a href="../about/index.html">ABOUT US</a></li>
+<li><a href="../service/index.html">SERVICES</a></li>
+<li><a href="../contact/index.html">CONTACT US</a></li></ul>
 </div>
 </header>
 		<div class="wrapper" id="main">

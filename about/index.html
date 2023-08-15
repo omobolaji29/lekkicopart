@@ -318,6 +318,35 @@ body, .section-title span, .widget_search input, .form-group label, .feature-box
 font-size: 18px !important;
 margin-top: 50px !important;
 }
+.menumobile, .img-menumobile{
+	display: none;
+}
+@media(max-width:991px){
+
+	.menumobile {
+	display: inline;
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
+	}
+	.mega-menu {
+		display: none;
+	}
+	.img-menumobile{
+	display: initial;
+}
+
+	 .menumobile ul li {
+		list-style-type: none;
+		font: 50px;
+		display: inline;
+		padding-left: 10px;
+	}
+	 .menumobile ul li a{
+		font-size: 15px;
+	
+	}
+ 	}
 
 
 </style>
@@ -482,6 +511,14 @@ gtag("config", "G-BT257RVM5K");
 		</div>
 	</nav>
 	<!-- menu end -->
+</div>
+<!-- a seperate menu for mobile responsive -->
+<img class="img-menumobile" src="lekkilog.png" alt="Lekki_Copart logo" height="70px" ></img>		
+<div class = "menumobile">			
+<ul >
+<li><a href="../index.html">HOME</a></li>
+<li><a href="../service/index.html">SERVICES</a></li>
+<li><a href="../contact/index.html">CONTACT US</a></li></ul>
 </div>
 </header>
 		

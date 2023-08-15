@@ -317,9 +317,42 @@ h1, h2, h3, h4, h5, h6, .blog-1 .blog-content a.link, .counter b, .car-item .pri
 body, .section-title span, .widget_search input, .form-group label, .feature-box.round-icon i, .call-to-action a, .counter.icon i:before, select, .price-slide .price input, .car-item .car-list li, .feature-box.round-border .icon i, .isotope-filters  button, .wpcf7-form input[type="text"], .wpcf7-form input[type="email"], .wpcf7-form textarea, .widget_recent_entries .recent-post-info span, caption, .widget ul li a, .widget_recent_entries .recent-post-info i, .sorting-options-main .price-slide .price input, .pagination li a, .pagination > li > a, .pagination > li > span, .product-listing .car-grid .price span.old-price, .car-details .car-price .old-price, .details-nav ul li a, .car-details .car-price .old-price, .car-details .slider-for .slick-prev:before, .entry-meta ul li a, .entry-meta a, .tags-2 ul li a, .woocommerce nav.woocommerce-pagination ul li a, .pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span, .pagination ul li span, .error-404 .error-content p, .countdown li p, #buddypress div#item-header div#item-meta, #buddypress .activity-list .activity-content .activity-header, #buddypress .activity-list .activity-content .comment-header, .nice-select, .cd_maintenance .mc4wp-form .form-control, .widget_recent_entries .recent-post-info a, .form-control, .section-field input, .section-field textarea, .section-title.style_2 h2, .wpb-js-composer .entry-content .vc_tta-color-grey.vc_tta-style-outline .vc_tta-panel .vc_tta-panel-title > a, .wpb-js-composer .entry-content .vc_tta-color-grey.vc_tta-style-outline .vc_tta-panel.vc_active .vc_tta-panel-title > a, .wp-block-latest-comments footer {
   color: #808183;
 }
-.car-item .sold, .car-price .sold {
-  background: url(../wp-content/themes/cardealer/images/sold-img.png) no-repeat 0 0;;
+.menufont ul li a {
+font-size: 18px !important;
+margin-top: 50px !important;
 }
+.menumobile, .img-menumobile{
+	display: none;
+}
+@media(max-width:991px){
+ .item {
+	margin-left: 100px;
+	
+}
+	.menumobile {
+	display: inline;
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
+	}
+	.mega-menu {
+		display: none;
+	}
+	.img-menumobile{
+	display: initial;
+}
+
+	 .menumobile ul li {
+		list-style-type: none;
+		font: 50px;
+		display: inline;
+		padding-left: 10px;
+	}
+	 .menumobile ul li a{
+		font-size: 15px;
+	
+	}
+ 	}
 
 </style>
 <link rel='stylesheet' id='cardealer-shortcodes-responsive-css' href='../wp-content/themes/cardealer/css/shortcodes-responsive3088.css?ver=3.7.0' media='all' />
@@ -484,6 +517,15 @@ gtag("config", "G-BT257RVM5K");
 		</nav>
 		<!-- menu end -->
 	</div>
+	<!-- a seperate menu for mobile responsive -->
+<img class="img-menumobile" src="lekkilog.png" alt="Lekki_Copart logo" height="70px" ></img>		
+<div class = "menumobile">			
+<ul >
+<li><a href="../index.html">HOME</a></li>
+<li><a href="../about/index.html">ABOUT US</a></li>
+<li><a href="../service/index.html">SERVICES</a></li>
+</ul>
+</div>
 	</header>
 		
 		
